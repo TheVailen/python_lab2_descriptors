@@ -1,17 +1,10 @@
 from __future__ import annotations
 
 from collections.abc import Iterable
-from dataclasses import dataclass
-from typing import Any, Protocol, runtime_checkable
+from typing import Protocol, runtime_checkable
 
-
-@dataclass(frozen=True)
-class Task:
-    """Представление задачи."""
-
-    id: str
-    payload: Any
-
+from src.models import Task
+from src.models import TaskStatus as TaskStatus
 
 @runtime_checkable
 class TaskSource(Protocol):

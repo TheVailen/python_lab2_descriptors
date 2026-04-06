@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from src.contracts import Task
+from src.models import Task
 
 
 @dataclass(frozen=True)
